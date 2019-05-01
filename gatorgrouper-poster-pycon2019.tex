@@ -1,0 +1,196 @@
+%%%% Better Poster latex template example v1.0 (2019/04/04)
+%%%% GNU General Public License v3.0
+%%%% Rafael Bailo
+%%%% https://github.com/rafaelbailo/betterposter-latex-template
+%%%%
+%%%% Original design from Mike Morrison
+%%%% https://twitter.com/mikemorrison
+
+\documentclass[a0paper,fleqn]{betterposter}
+\usepackage{float}
+\usepackage[latin1]{inputenc}
+\usepackage{tikz}
+\usepackage{booktabs}
+\usetikzlibrary{shapes,arrows}
+\usetikzlibrary{arrows.meta}
+
+\usepackage{enumitem}
+\usepackage{fontawesome}
+
+\newcommand{\codedatagit}{\faCode~+~\faDatabase~in \faGit}
+
+\tikzstyle{block2} = [rectangle, draw, fill=white!20,
+text width=6em, text centered, rounded corners, minimum height=4em, node distance = 10em, text=black]
+
+\begin{document}
+
+\betterposter{
+
+  %%%%%%%% MAIN COLUMN
+
+  \maincolumn{
+
+    %% Main space
+
+    The \textbf{GatorGrouper} tool supports effective teamwork by automatically
+    forming teams
+    %
+    \vfill
+
+    \vspace*{-.5in}
+    %
+    % \include{fiasco}
+    %
+    \vspace*{-2.5in}
+
+    Does the status of $T_i$ change when Function-Fiasco does not run $m$?
+    %
+    \vspace*{-4.5in}
+
+    }{
+
+    %%%% Bottom space
+
+    %% QR code
+    %
+    \qrcode{img/qr_code}{img/smartphoneWhite}{\textbf{Scan the QR Code} to
+    \\visit our GitHub project}
+
+  }
+
+  }{
+
+  %%%%%%%% LEFT COLUMN
+
+  \title{\fontsize{50}{60}\selectfont Automatic Detection of Pseudo-tested
+    Methods using Python and Pytest}
+
+    \author{Nicholas Tocci}
+    %
+    \author{Gregory M.\@ Kapfhammer}
+
+  \vspace*{-.5in}
+
+  \section{Introduction}
+  %
+  Python programs are often complex and difficult to test.
+  %
+  But test coverage does not show that a method was adequately tested.
+  %
+  A method $m$ is psuedo-tested if a test passes even when $m$ is not run.
+
+  \vspace*{.25in}
+
+  Since it may be time-consuming and error-prone to manually detect
+  psuedo-tested methods, Function-Fiasco automatically discovers them for
+  engineers.
+
+  \vspace*{-.25in}
+  %
+  \section{Implementation}
+  %
+  Function-Fiasco uses technologies like:
+
+  \begin{itemize}
+
+    \item Pytest
+    \item Coverage
+    \item Decorators
+    \item Instrumentation
+
+  \end{itemize}
+
+  \vspace*{.5in}
+  %
+  Function-Fiasco performs these steps:
+
+  \begin{enumerate}[leftmargin=.5in]
+
+    \item Instrument all program methods
+    \item Elide execution of chosen method
+    \item Run the tests and observe behavior
+    \item Run steps (2) and (3) for all methods
+    \item Report the psuedo-tested methods
+
+  \end{enumerate}
+
+  \vspace*{.25in}
+  %
+  Steps are optimized, ensuring that the tool scales to large Python programs.
+  %
+  \vspace*{.5in}
+  %
+
+  %% This fills the space between the content and the logo
+  \vfill
+
+  \includegraphics[width=\textwidth]{img/CollegeLogo.eps}\\
+
+  }{
+
+  %%%%%%%% RIGHT COLUMN
+
+  \vspace*{-.5in}
+  %
+  \section{Preliminary Results}
+
+  \vspace*{-1in}
+
+  % \include{table}
+
+  \vspace*{-.5in}
+
+  Function-Fiasco detects pseudo-tested methods in real Python programs,
+  suggesting the need for improved testing.
+
+  \section{Future Work}
+  %
+  Add new features to Function-Fiasco: \\
+  %
+  \vspace*{-.5in}
+
+  \begin{itemize}[leftmargin=*]
+
+    \item{Handle more kinds of methods}
+      %
+    \item{Improve type fuzzing capability}
+      %
+    \item{Better observe parameterized tests}
+      %
+    \item{Report more types of test coverage}
+
+  \end{itemize}
+
+  \vspace{.5em}
+  %
+  Use improved Function-Fiasco to detect and improve pseudo-tested methods.
+
+  \section{Conclusion}
+  %
+  Pseudo-tested methods exist in many real-world Python programs.
+  %
+  Function-Fiasco automatically detects these methods, saving time that testers
+  can instead devote to improving test suites.
+  %
+  Available on GitHub, Function-Fiasco aids the implementation of high-quality
+  Pytest test suites and Python programs.
+
+  \section{Get Involved}
+  %
+  If you would like support the development of Function-Fiasco, please raise an
+  issue on the tracker or create a pull request to add a new feature or bug
+  fix.
+  %
+  \vfill
+
+  \section{Acknowledgements}
+  %
+  Poster creation aided by Cory Wiard.\\
+  Feedback provided by Aravind Mohan.\\
+
+  % \vspace*{.5in}
+  % \includegraphics[width=\textwidth]{img/ComputerScience-Stack}
+
+}
+
+\end{document}
