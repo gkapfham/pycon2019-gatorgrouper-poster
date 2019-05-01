@@ -81,18 +81,18 @@
 
   \title{\fontsize{50}{60}\selectfont GatorGrouper: \\ \mbox{Using Python} and GitHub for
   Team Formation and Assessment}
-    %
+  %
   \vspace*{-.25in}
   \author{Gregory M.\@ Kapfhammer \\[.5in]
   \mbox{\faLink{} gregorykapfhammer.com} \\
   \faTwitter{} @GregKapfhammer \\
   \faGithubAlt{} github.com/gkapfham
-
+  %
   }
 
   \vspace*{-.5in}
 
-  \section{Introduction}
+  \section{\faSend~Introduction}
   %
   Python programs are often complex and difficult to test.
   %
@@ -100,11 +100,11 @@
   %
   A method $m$ is psuedo-tested if a test passes even when $m$ is not run.
 
-  \vspace*{.25in}
+  % \vspace*{.25in}
 
-  Since it may be time-consuming and error-prone to manually detect
-  psuedo-tested methods, Function-Fiasco automatically discovers them for
-  engineers.
+  % Since it may be time-consuming and error-prone to manually detect
+  % psuedo-tested methods, Function-Fiasco automatically discovers them for
+  % engineers.
 
   \vspace*{-.25in}
   %
@@ -113,27 +113,27 @@
   GatorGrouper forms teams with:
 
   \begin{itemize}
-
+    %
     \item Random
     \item Round-robin
     \item Kerninghan-Lin
     \item Genetic Algorithm
-
+    %
   \end{itemize}
 
-  \vspace*{.5in}
-  %
-  Function-Fiasco performs these steps:
-
-  \begin{enumerate}[leftmargin=.5in]
-
-    \item Instrument all program methods
-    \item Elide execution of chosen method
-    \item Run the tests and observe behavior
-    \item Run steps (2) and (3) for all methods
-    \item Report the psuedo-tested methods
-
-  \end{enumerate}
+  %\vspace*{.5in}
+  %%
+  %Function-Fiasco performs these steps:
+  %%
+  %\begin{enumerate}[leftmargin=.5in]
+  %  %
+  %  \item Instrument all program methods
+  %  \item Elide execution of chosen method
+  %  \item Run the tests and observe behavior
+  %  \item Run steps (2) and (3) for all methods
+  %  \item Report the psuedo-tested methods
+  %  %
+  %\end{enumerate}
 
   \vspace*{.25in}
   %
