@@ -7,9 +7,11 @@ poster that [Gregory M. Kapfhammer](https://www.gregorykapfhammer.com/), with
 the support of students in the Department of Computer Science at Allegheny
 College, gave at the PyCon 2019 conference. The poster uses the
 [rafaelbailo/betterposter-latex-template](https://github.com/rafaelbailo/betterposter-latex-template).
-You are welcome to use this source code as inspiration for your own technical
-poster. If you find this example useful, could I trouble you to star this
-repository and then acknowledge it in your own presentation slides?
+It also uses the [smartphone
+icon](https://www.flaticon.com/free-icon/smartphone_65680) by
+[Freepik](https://www.flaticon.com/authors/freepik). You are welcome to use this
+source code as inspiration for your own technical poster. If you find this
+example useful, could I trouble you to star this repository?
 
 You can type the following command if you want to clone this repository:
 
