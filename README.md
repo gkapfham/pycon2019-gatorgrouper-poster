@@ -27,7 +27,7 @@ cd pycon2019-gatorgrouper-poster
 pdflatex gatorgrouper-poster-pycon2019.tex
 ```
 
-It is worth noting that you can also compile the paper using other LaTeX
-development tools, such as `latexmk`. If you are unable to compile the
-presentation with your development tools and your execution environment, then
-please open a new issue and I will attempt to resolve your concerns.
+You can also compile the paper using other LaTeX development tools, such as
+`latexmk`. If you are unable to compile the presentation with your development
+tools and your execution environment, then please open a new issue and I will
+attempt to resolve your concerns.
